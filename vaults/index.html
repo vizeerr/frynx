@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MythicMesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    
+</head>
+<body class="bgColor primColor " >
+
+  <div class="container nav d-flex justify-content-between p-3" style="border-bottom:1px solid var(--mainBorder)">
+    <div class="d-flex gap-5 fs-8 fw-semibold  align-items-center ">
+      <img style="width: 30px; height: 30px;" src="/assets/images/umami logo tp.png" alt="">
+      <a href="/" >Home</a>
+      <a href="/vaults/" class="primColor">Vaults</a>
+      <a href="/marinate/">Marinate</a>
+      <a href="/stats/protocol/">Stats</a>
+    </div>
+    <div class="d-flex gap-4 fs-8 align-items-center  ">
+      <button  class="secBtn primColor " style="font-size: 12px; color: rgb(18 170 255 ); border: 2px solid rgb(18 170 255); border-radius: 7px !important;">oARB Campaign <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd"></path></svg></button>
+      <div class="d-flex gap-2 align-items-center">
+        <img class="" style="width: 16px; height: 16px;"   src="/assets/images/umami logo tp.png" alt="">
+        <p class="m-0 secColor fw-semibold ">$4.78</p>
+      </div>
+      <button class="secBtn primColor" style="font-size: 12px;">Connect Wallet</button>
+      <div class="d-flex align-items-center  gap-1" id="dnswth">
+        <img width="19" height="19" src="https://img.icons8.com/ios/50/7777a0/sun.png" alt="sun"/>
+        <p class="m-0 secColor" >/</p>
+        <img width="16" height="16" style="transform: rotate(-30deg);" src="https://img.icons8.com/ios/50/7777a0/moon-symbol.png" alt="moon-symbol"/>
+      </div>
+
+      <div class="socio-ico">
+        <div class="d-flex gap-2 logos">
+            <img  style="width: 30px; height: 30px; ;" src="/assets/images/icons8-telegram-50.png" alt="">
+            <img  style="width: 30px; height: 30px; ;"src="/assets/images/icons8-twitter-50.png" alt="">
+            <img  style="width: 30px; height: 30px; ;" src="/assets/images/icons8-medium-30.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>  
+    
+  <div class="container-fluid p-0 mt-5" >
+   
+        <div class="container  ">
+
+          <h2 >Deconstructed GLP Vaults</h2>
+          <div class="d-flex cardes flex- justify-content-between w-100 gap-5 mt-4">
+            
+            <div class="w-100 px-3 pt-4 boxBorder boxBg">
+              
+              <div>
+                <p class="fs-7 secColor mt-1">Total Value Locked</p>
+              </div>
+              
+              <div>
+                <canvas id="okcanvas" style="height:30vh; width:0;" >
+                  <p>Hello Fallback World</p>
+              </canvas>
+                
+              </div>
+            </div>
+            <div class="w-100 px-3 py-3 boxBorder boxBg">
+              <div class="d-flex gap-5 grapran">
+                <div>
+                  <p class=" m-0 fs-8 secColor">TVL across all vaults</p>
+                  <p class="fs-4 fw-semibold primColor">$5,078,495</p>
+                </div>
+                <div class="">
+                  <p class="m-0 fs-8 secColor">Assets in GLP</p>
+                  <p class="fs-4 fw-semibold primColor">$3,833,093
+                  </p>
+                </div>
+                <div class="">
+                  <p class="m-0 fs-8 secColor">Assets in Hedges
+
+                  </p>
+                  <p class="fs-4 fw-semibold primColor">$65,288
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 px-3 align-items-center cardes ">
+               <div class="d-flex w-100 ">
+                <div class="d-flex justify-content-center align-items-center graphBlock " style=" border-radius: 5px 0px 0px 5px;   background: linear-gradient(270deg,#0599B7 0%,#05E2DF 100%);
+                height: 17.5vh; width: 50%;">
+                 <p class="m-0">33.5%</p>
+                </div>
+                <div class="d-flex flex-column " style="width:100%;">
+                  <div class="d-flex justify-content-center align-items-center graphBlock" style=" border-radius: 0px 5px 0px 0px;  background: linear-gradient(270deg,#5F17F9 0%,#B45CFE 100%);
+                  height: 8.75vh;">
+                  <div class="m-0">
+                    32.2%
+                  </div>
+                  
+                  </div>
+                  <div class="w-100 d-flex ">
+                    <div class="d-flex justify-content-center align-items-center graphBlock"  style="width: 92%; background: linear-gradient(270deg,#F09242 0%,#FFD586  100%);
+                    height: 8.75vh;">
+                    <p class="m-0">32.0%</p>
+
+                    </div>
+                    <div class=" " style="width: 8%;">
+                      <div class="graphBlock" style="    background: linear-gradient(270deg,#104EFF 0%,#6B67FF 100%);
+                      height: 4.37vh;"></div>
+                      <div class="graphBlock" style=" border-radius: 0px 0px 5px 0px;   background: linear-gradient(270deg,#FF0161 0%,#FF629D 100%);
+                      height: 4.37vh;"></div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+                
+               <div class="d-flex flex-column  w-100 fs-9 secColor  "> 
+                  
+                  <div class="d-flex justify-content-between w-100 mt-1 pb-2" style="border-bottom :1px solid var(--secColor)">
+                    <div class="d-flex gap-1 align-items-center ">
+                      <span style="width: 15px;height: 15px; border-radius: 5px; background: linear-gradient(45deg,rgba(89,42,251,1) 2%,rgb(199, 110, 255)   97%);"></span>
+                      <p class="m-0">
+                        GLP USDT Vault
+                      </p>
+                    </div>
+                    <p class="m-0">$1,695,230</p>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-1 pb-2" style="border-bottom :1px solid var(--secColor)">
+                    <div class="d-flex gap-1 align-items-center ">
+                      <span style="width: 15px;height: 15px; border-radius: 5px; background: linear-gradient(45deg,#0595b4  2%,#04d8da  97%);"></span>
+                      <p class="m-0">
+                        GLP WETH Vault
+                      </p>
+                    </div>
+                    <p class="m-0">$1,695,230</p>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-1 pb-2" style="border-bottom :1px solid var(--secColor)">
+                    <div class="d-flex gap-1 align-items-center ">
+                      <span style="width: 15px;height: 15px; border-radius: 5px; background: linear-gradient(270deg,#f09445 0%,#fed285 100%)"></span>
+                      <p class="m-0">
+                        GLP WBTC Vault
+                      </p>
+                    </div>
+                    <p class="m-0">$1,695,230</p>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-1 pb-2" style="border-bottom :1px solid var(--secColor)" >
+                    <div class="d-flex gap-1 align-items-center ">
+                      <span style="width: 15px;height: 15px; border-radius: 5px;  background: linear-gradient(270deg,#114ffe 0%,#6867fe 100%)"></span>
+                      <p class="m-0">
+                        GLP LINK Vault
+                      </p>
+                    </div>
+                    <p class="m-0">$1,695,230</p>
+                  </div>
+                  <div class="d-flex justify-content-between w-100 mt-1 pb-2" >
+                    <div class="d-flex gap-1 align-items-center ">
+                      <span style="width: 15px;height: 15px; border-radius: 5px;  background: linear-gradient(270deg,#ff0363 0%,#fe3f87 100%)"></span>
+                      <p class="m-0">
+                        GLP UNI Vault
+                      </p>
+                    </div>
+                    <p class="m-0">$1,695,230</p>
+                  </div>
+                  
+               </div>
+                
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="d-flex  cardes justify-content-between w-100 gap-5 mt-5 ">
+            
+            <div class="w-100 px-4 pt-4 prBoxBg">
+              <h5>GLP USDT Vault</h5>
+              <div class="d-flex justify-content-between pe-5">
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Deposit</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/color/48/tether--v1.png" alt="tether--v1"/> USDT</p>
+                </div>
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Earn</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">USDT</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">63.4%</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">Boosted APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">91.2%</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex w-100 justify-content-between fs-8 mb-1 fw-semibold ">
+                  <p class="m-0 gradColor">$5.047M</p>
+                  <p class="m-0">$7M</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%; box-shadow: 0 0 6px rgba(89,42,251,1) ; background: linear-gradient(45deg,rgba(89,42,251,1) 2%,rgb(199, 110, 255)   97%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="d-flex w-100 justify-content-between fs-8 secColor mt-1 ">
+                  <p>Total Deposit</p>
+                  <p>Vault Capacity</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 px-4 pt-4 prBoxBg">
+              <h5>GLP WETH Vault</h5>
+              <div class="d-flex justify-content-between pe-5">
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Deposit</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/fluency/64/ethereum.png" alt="ethereum"/> WETH</p>
+                </div>
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Earn</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/fluency/64/ethereum.png" alt="ethereum"/> WETH</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">51.4%</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">Boosted APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">140%</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex w-100 justify-content-between fs-8 mb-1 fw-semibold ">
+                  <p class="m-0 gradColor">818.3 WETH</p>
+                  <p class="m-0">920.5 WETH</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%; box-shadow: 0 0 6px #0595b4; background: linear-gradient(45deg,#0595b4  2%,#04d8da  97%);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="d-flex w-100 justify-content-between fs-8 secColor mt-1 ">
+                  <p>Total Deposit</p>
+                  <p>Vault Capacity</p>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="d-flex cardes justify-content-between w-100 gap-5 mt-5 ">
+            
+            <div class="w-100 px-4 pt-4 prBoxBg">
+              <h5>GLP WBTC Vault</h5>
+              <div class="d-flex justify-content-between pe-5">
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Deposit</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/color/64/bitcoin--v1.png" alt="bitcoin--v1"/> WBTC</p>
+                </div>
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Earn</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/color/64/bitcoin--v1.png" alt="bitcoin--v1"/> WBTC</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">12%</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">Boosted APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">98%</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex w-100 justify-content-between fs-8 mb-1 fw-semibold ">
+                  <p class="m-0 gradColor">43.75 WBTC</p>
+                  <p class="m-0">67.03 WBTC</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%; box-shadow: 0 0 6px #f09445 ; background: linear-gradient(270deg,#f09445 0%,#fed285 100%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="d-flex w-100 justify-content-between fs-8 secColor mt-1 ">
+                  <p>Total Deposit</p>
+                  <p>Vault Capacity</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 px-4 pt-4 prBoxBg">
+              <h5>GLP LINK Vault</h5>
+              <div class="d-flex justify-content-between pe-5">
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Deposit</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/pastel-glyph/64/228BE6/chainlink.png" alt="chainlink"/> LINK</p>
+                </div>
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Earn</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="18" height="18" src="https://img.icons8.com/pastel-glyph/64/228BE6/chainlink.png" alt="chainlink"/> LINK</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">35%</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">Boosted APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">39.9%</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex w-100 justify-content-between fs-8 mb-1 fw-semibold ">
+                  <p class="m-0 gradColor">5.436k LINK</p>
+                  <p class="m-0">5.64k LINK</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%; box-shadow: 0 0 6px #114ffe  ; background: linear-gradient(270deg,#114ffe 0%,#6867fe 100%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="d-flex w-100 justify-content-between fs-8 secColor mt-1 ">
+                  <p>Total Deposit</p>
+                  <p>Vault Capacity</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="d-flex cardes justify-content-between w-100 gap-5 mt-5 ">
+            <div class="px-4 pt-4 prBoxBg" style="width: 48%;">
+              <h5>GLP UNI Vault</h5>
+              <div class="d-flex justify-content-between pe-5">
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Deposit</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="16" height="16" src="https://img.icons8.com/external-black-fill-lafs/16/F25081/external-Uniswap-cryptocurrency-black-fill-lafs.png" alt="external-Uniswap-cryptocurrency-black-fill-lafs"/> UNI</p>
+                </div>
+                <div>
+                  <p class="fs-9 secColor fw-semibold m-0">Earn</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center"><img width="16" height="16" src="https://img.icons8.com/external-black-fill-lafs/16/F25081/external-Uniswap-cryptocurrency-black-fill-lafs.png" alt="external-Uniswap-cryptocurrency-black-fill-lafs"/> UNI</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">35%</p>
+                </div>
+                <div class="tetColor">
+                  <p class="fs-9  fw-semibold m-0">Boosted APR</p>
+                  <p class="fs-6  fw-semibold  d-flex gap-1 align-items-center">39.9%</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex w-100 justify-content-between fs-8 mb-1 fw-semibold ">
+                  <p class="m-0 gradColor">5.436k UNI</p>
+                  <p class="m-0">5.64k UNI</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%; box-shadow: 0 0 6px #ff0363; background: linear-gradient(270deg,#ff0363 0%,#fe3f87 100%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="d-flex w-100 justify-content-between fs-8 secColor mt-1 ">
+                  <p>Total Deposit</p>
+                  <p>Vault Capacity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+     
+
+      
+
+        <div class="container pt-5 mt-5 pb-5 d-flex  justify-content-center " style="border-top:1px solid var(--mainBorder)" >
+          <div class="socio-ico">
+            <div class="d-flex gap-5 logos">
+                <img  src="/assets/images/icons8-telegram-50.png" alt="">
+                <img src="/assets/images/icons8-twitter-50.png" alt="">
+                <img src="/assets/images/icons8-medium-30.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        
+  </div>
+
+  
+  <script src="/assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js" integrity="sha512-6HrPqAvK+lZElIZ4mZ64fyxIBTsaX5zAFZg2V/2WT+iKPrFzTzvx6QAsLW2OaLwobhMYBog/+bvmIEEGXi0p1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+(async function() {
+      const dates = ["9-1-23", "13-3-23", "15-5-23", "17-7-23", "18-9-23", "20-11-23"];
+
+      // Manually specify data points between the static dates
+      const dataPoints = [150, 200, 250, 180, 220, 300, 400, 350, 250, 200, 180, 220, 280, 320];
+
+      // Combine static dates and data points
+      const allDates = dates.reduce((acc, date) => {
+        acc.push(date);
+        for (let i = 0; i < 4; i++) {
+          acc.push('');
+        }
+        return acc;
+      }, []);
+
+      // Combine static data and data points
+      const allData = dataPoints.reduce((acc, data) => {
+        acc.push(data);
+        for (let i = 0; i < 4; i++) {
+          acc.push(dataPoints[i + 1]); // Assuming each year has a corresponding data point
+        }
+        return acc;
+      }, []);
+
+      const ctx = document.getElementById('okcanvas').getContext('2d');
+      const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
+      gradient.addColorStop(0, '#9a0dfd');
+      gradient.addColorStop(1, '#0d6efd');
+
+      new Chart(
+        document.getElementById('okcanvas'),
+        {
+          type: 'line',
+          data: {
+            labels: allDates,
+            datasets: [
+              {
+                label: 'Dollars Spent',
+                data: allData,
+                borderColor: gradient,
+                tension: 0.1,
+                borderWidth: 2,
+                pointBackgroundColor: '#000',
+                pointRadius: 0,
+                fill: true,
+                backgroundColor: '#410dfd30',
+              },
+            ],
+          },
+          options: {
+            scales: {
+              x: {
+                type: 'category',
+                ticks: {
+                  autoSkip: false, // Prevent automatic skipping of labels
+                  maxRotation: 0, // Set rotation angle to 0 degrees
+                  minRotation: 0, // Set rotation angle to 0 degrees
+                },
+                grid: {
+                  display: false, // Hide X-axis grid lines
+                },
+              },
+              y: {
+                title: {
+                  display: true,
+                  
+                },
+                ticks: {
+                  callback: function (value, index, values) {
+                    return value /100+ 'M';
+                  },
+                },
+                
+              },
+            },
+            layout: {
+              padding: {
+                top: 0,
+                bottom: 0,
+              },
+            },
+            plugins: {
+              legend: {
+                display: false, 
+              },
+            },
+          },
+        }
+      );
+    })();
+
+
+
+ 
+</script>
+   
+    
+</body>
+</html>
